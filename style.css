@@ -1,0 +1,241 @@
+/* Application police maquette */
+body
+{
+   font-family: 'Raleway', sans-serif;
+  
+}
+
+
+/* Application police maquette */
+header
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    }
+
+/* redimensionnement du logo et marges */
+
+#logo img
+{
+    width: auto;
+    height: 50px;
+
+}
+#logo
+{ 
+    margin-left: 20px;
+}
+
+/* mise en place menu de navigation*/
+nav{
+    display: flex;
+    margin-right: 50px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+nav li{
+    margin-left: 30px;
+}
+
+nav p a
+{
+    color: #0065FC;
+}
+
+/* Effet de survol sur lien de navigation */
+
+nav p a:hover
+{
+    color: black;
+    
+}
+
+nav ul a:hover
+{
+    color:#0065FC;
+}
+
+
+/* Contenu principal */
+
+/* Ajustement taille titre et paragraphe avant recherche*/
+
+#ajust
+{
+    font-size: 0.8em;
+    margin-left: 20px;
+}
+
+
+/* Mise en place de la recherche*/
+
+
+#search
+{
+    display: inline-flex;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.fa-map-marker-alt
+{ 
+    font-size: 1em;
+    margin-top: 15px;
+    padding: 16.5px 10px 35px 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    text-align: center;
+}
+
+#ville
+{
+    width: 234px;
+    height: 51px;
+    border: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+#submit
+{
+    width: 130px;
+    height: 51px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #0065fc;
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+}
+
+#submit:hover
+{
+    color: #0065FC;
+    background-color: #DEEBFF;
+}
+
+
+/* Mise de la partie filtres*/
+
+.filtres
+{
+    display: flex;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 1em;
+        
+}
+
+
+.filtres h2
+{
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+/* Mise en forme commune à tous les filtres*/
+
+.filtres button
+{
+    display: flex;
+    background-color: white;
+    font-weight: bold;
+    align-items: center;
+    font-size: 1em;
+    border: 2px solid #f2f2f2;
+    border-radius: 50px;
+    background: none;
+    padding: 0 20px 0 0;
+    margin-right: 50px;
+}
+
+
+.fa-money-bill-wave
+{
+    display: flex;
+    font-size: 1em;
+    width: 50px;
+    height: 50px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.fa-child
+{
+    display: flex;
+    font-size: 1em;
+    width: 50px;
+    height: 50px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.fa-heart
+{
+    display: flex;
+    font-size: 1em;
+    width: 50px;
+    height: 50px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.fa-dog
+{
+    display: flex;
+    font-size: 1em;
+    width: 50px;
+    height: 50px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+button:hover
+{
+    color: #0065FC;
+    background-color: #DEEBFF;
+}
+

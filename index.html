@@ -9,13 +9,90 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">    
     
     <link rel="stylesheet" href="style.css" />
-    
+        
     <title>Reservia</title>
 
 </head>
 
 <body>
-    
+    <!--Mise en place de l'entête -->
+    <header>
+        <!-- intégration du logo du site -->
+        <div id="logo">
+            <img src="/images/Reservia@3x.png" alt="logo réservia">
+        </div>
+        <!-- Fin de l'intégration du logo -->
+
+        <!-- Mise en place du menu de navigation avec ancres-->
+        <nav>
+            <ul>
+                <li><a href="#Hébergements">Hébergements</a></li>
+                <li><a href="#Activités">Activités</a></li>
+                
+            </ul>
+                <p><a href="#S'inscrire">S'inscrire</a></p>
+        </nav>
+        <!-- Fin du menu de navigation -->
+    </header>
+    <!-- Fin de l'entête-->
+
+    <!-- Mise ne place du contenu principal -->
+    <main>
+        <section>
+
+    <!-- Mise ne place du titre et de la partie recherche -->
+
+            <div id="ajust">
+                <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
+
+            <div id="search">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>
+                    <input id="ville" type="search" name="Ville" value="Marseille, France">
+                    <input id="submit" type="submit" value="Rechercher" />
+                </p>
+            </div>
+
+    <!-- Mise ne place de la partie filtres -->
+
+            <div class="filtres">
+                <h2>Filtres</h2>
+                <button>
+                    <i class="fas fa-money-bill-wave"></i>
+                    <p>Economique</p>
+                </button>
+
+                <button>
+                    <i class="fas fa-child"></i>
+                    <p>Familial</p>
+                </button>
+
+                <button class="bouton">
+                    <i class="fas fa-heart"></i>
+                    <p>Romantique</p>
+                </button>
+
+                <button>
+                    <i class="fas fa-dog"></i>
+                    <p>Animaux autorisés</p>
+                </button>
+            </div>
+
+        </section>
+
+
+    </main>
+    <!-- Fin du contenu principal-->
 </body>
+
+<!-- Mise en place du pied de page-->
+<footer>
+
+
+    
+</footer>
+<!-- Fin du pied de page -->
 
 </html>
