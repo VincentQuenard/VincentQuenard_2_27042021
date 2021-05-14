@@ -5,6 +5,14 @@ body
   
 }
 
+/* Application police maquette pour titres h3 */
+h3
+{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 50px;
+}
 
 /* Application police maquette */
 header
@@ -148,10 +156,9 @@ nav ul a:hover
         
 }
 
-
 .filtres h2
 {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bold;
     margin-left: 20px;
     margin-right: 50px;
@@ -173,11 +180,11 @@ nav ul a:hover
     margin-right: 50px;
 }
 
+/* Mise en forme des incones des filtres*/
 
 .fa-money-bill-wave
 {
     display: flex;
-    font-size: 1em;
     width: 50px;
     height: 50px;
     background-color: #DEEBFF;
@@ -191,7 +198,6 @@ nav ul a:hover
 .fa-child
 {
     display: flex;
-    font-size: 1em;
     width: 50px;
     height: 50px;
     background-color: #DEEBFF;
@@ -206,7 +212,6 @@ nav ul a:hover
 .fa-heart
 {
     display: flex;
-    font-size: 1em;
     width: 50px;
     height: 50px;
     background-color: #DEEBFF;
@@ -221,7 +226,6 @@ nav ul a:hover
 .fa-dog
 {
     display: flex;
-    font-size: 1em;
     width: 50px;
     height: 50px;
     background-color: #DEEBFF;
@@ -233,9 +237,37 @@ nav ul a:hover
     margin-right: 15px;
 }
 
+/* Effet de survol des boutons filtres*/
 button:hover
 {
     color: #0065FC;
     background-color: #DEEBFF;
 }
+
+/* Mise en forme de la ligne information*/
+#info
+{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 0.8em;
+}
+
+.fa-info
+{
+    display: flex;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    color: #0065FC;
+    border-radius: 50px;
+    border: 2px solid #f2f2f2;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+
 
