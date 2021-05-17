@@ -1,7 +1,9 @@
+
 /* Application police maquette */
 body
 {
    font-family: 'Raleway', sans-serif;
+   margin: 70px 70px 0 70px;
   
 }
 
@@ -10,8 +12,9 @@ h3
 {
     font-size: 1.3em;
     font-weight: bold;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-right: 50px;
+    padding-top: 30px;
 }
 
 /* Application police maquette */
@@ -29,11 +32,13 @@ header
 {
     width: auto;
     height: 50px;
+   
 
 }
 #logo
 { 
     margin-left: 20px;
+    
 }
 
 /* mise en place menu de navigation*/
@@ -41,7 +46,7 @@ nav{
     display: flex;
     margin-right: 50px;
     font-weight: bold;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 nav a
@@ -54,6 +59,7 @@ nav ul{
     display: flex;
     list-style-type: none;
     margin-right: 30px;
+    
 }
 
 nav li{
@@ -70,12 +76,13 @@ nav p a
 nav p a:hover
 {
     color: black;
-    
+    border-top: 3px solid #0065FC;
 }
 
 nav ul a:hover
 {
     color:#0065FC;
+    border-top: 3px solid #0065FC;
 }
 
 
@@ -110,6 +117,8 @@ nav ul a:hover
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     text-align: center;
+    align-items: center;
+    
 }
 
 #ville
@@ -162,6 +171,8 @@ nav ul a:hover
     font-weight: bold;
     margin-left: 20px;
     margin-right: 50px;
+    align-items: center;
+    display: flex;
 }
 
 /* Mise en forme commune à tous les filtres*/
@@ -177,7 +188,7 @@ nav ul a:hover
     border-radius: 50px;
     background: none;
     padding: 0 20px 0 0;
-    margin-right: 50px;
+    margin-right: 150px;
 }
 
 /* Mise en forme des incones des filtres*/
@@ -269,5 +280,89 @@ button:hover
     margin-right: 15px;
 }
 
+/* Mise en forme de la partie hébergement gauche*/
+
+/* Mise en place du container gauche */
+#gauche
+{
+    background-color: #F2F2F2;
+    width: 70%;
+    margin: 30px;
+    border-radius: 30px;
+}
+
+/* Ajustement des photos*/
+
+.imag
+{
+    width: 350px;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+}
+
+/* Fond bleu des étoiles */
+.fa-star
+{
+    color: #0065FC;
+}
+
+/* Cadre de toutes les images et descriptions */
+
+.photog
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0 0 10px;
+    
+}
+
+/* Mise en forme de chaque photo et description*/
+
+.entour
+{
+    border: 2px solid #f2f2f2;
+    border-radius: 30px;
+    padding: 5px 5px 5px 5px;
+    background-color: white;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+}
+
+/* Ajustement description sous photo */
+.descrip
+{
+    padding-left: 10px;
+   
+}
+/* Ajustement titre des photos*/
+h4
+{
+    margin: 0px;
+    font-size: 0.9em;
+    
+}
+
+/* Ajustement ligne tarif nuit*/
+
+h4 + p
+{
+    font-size: 0.8em;
+    margin: 5px 0 5px 0;
+}
+
+/* Mise en place du bouton afficher plus*/
+
+#affplus
+{
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0 0 30px 30px;
+}
+
+/* Fin de la mise en forme de la partie hébergement gauche*/
 
 
+
+/* Mise en forme de la partie hébergement droite*/
