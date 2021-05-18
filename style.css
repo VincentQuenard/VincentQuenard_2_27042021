@@ -12,7 +12,7 @@ h3
 {
     font-size: 1.3em;
     font-weight: bold;
-    margin-left: 30px;
+    margin-left: 50px;
     margin-right: 50px;
     padding-top: 30px;
 }
@@ -249,12 +249,23 @@ nav ul a:hover
 }
 
 /* Effet de survol des boutons filtres*/
+button a
+{
+    color: black;
+    background-color: white;
+}
+
 button:hover
 {
     color: #0065FC;
     background-color: #DEEBFF;
 }
 
+button a:hover
+{
+    color: #0065FC;
+    background-color: #DEEBFF;
+}
 /* Mise en forme de la ligne information*/
 #info
 {
@@ -280,6 +291,12 @@ button:hover
     margin-right: 15px;
 }
 
+/* Mise en page de la section hébergements*/
+#hbgt
+{
+    display: flex;
+}
+
 /* Mise en forme de la partie hébergement gauche*/
 
 /* Mise en place du container gauche */
@@ -295,7 +312,7 @@ button:hover
 
 .imag
 {
-    width: 350px;
+    width: 320px;
     height: 150px;
     border-radius: 20px 20px 0 0;
 }
@@ -312,7 +329,7 @@ button:hover
 {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px 0 0 10px;
+    margin: 20px 0 0 40px;
     
 }
 
@@ -329,6 +346,24 @@ button:hover
 
 }
 
+/* Description cliquable et enlèvement du soulignement */
+
+.lien
+{
+    text-decoration: none;
+}
+
+.entour a:hover
+{
+    color: #0065FC ;
+    text-decoration: none;
+}
+
+.entour a
+{
+    color: black ;
+    text-decoration: none;
+}
 /* Ajustement description sous photo */
 .descrip
 {
@@ -364,5 +399,98 @@ h4 + p
 /* Fin de la mise en forme de la partie hébergement gauche*/
 
 
-
 /* Mise en forme de la partie hébergement droite*/
+
+
+
+/* Mise en place du container droit */
+
+#droite
+{
+    background-color: #F2F2F2;
+    width: 25%;
+    margin: 30px;
+    border-radius: 30px;
+}
+
+
+/* Cadre de toutes les images et descriptions */
+
+.photod
+{
+    margin: 20px 0 0 40px;
+    width: auto;
+    
+}
+
+/* Ajustement des photos*/
+
+.imad
+{
+    width: 150px;
+    height: 160px;
+    border-radius: 20px  0 0 20px;
+}
+
+/* Mise en forme de chaque photo et description*/
+
+.entourd
+{
+    display: flex;  
+    border: 2px solid #f2f2f2;
+    border-radius: 30px;
+    padding: 5px 5px 5px 5px;
+    background-color: white;
+    margin-right: 30px;
+    margin-bottom: 30px;
+      
+}
+
+/* Ajustement description sous photo */
+.descripd
+{
+   padding-left: 10px;
+   padding-right: 50px;
+} 
+
+.descripd h4
+{
+   padding-top: 15px;
+   
+} 
+
+.descripd h4 + p
+{
+
+    font-size: 0.8em;
+    margin: 10px 0 50px 0;
+}
+
+/* Placement descriptions à coté photo */
+.horiz
+{
+    display: flex;
+    width: auto;
+    height: 160px;
+}
+
+/* Espacement logo du titre */
+.fa-chart-line
+{
+    margin-left: 110px;
+}
+
+/* Description cliquable */
+.entourd a:hover
+{
+    color: #0065FC ;
+    text-decoration: none;
+}
+
+.entourd a
+{
+    color: black ;
+    text-decoration: none;
+}
+/* Fin de la mise en forme de la partie hébergement droite*/
+
