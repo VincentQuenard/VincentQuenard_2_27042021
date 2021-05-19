@@ -322,7 +322,10 @@ button a:hover
 {
     color: #0065FC;
 }
-
+.far
+{
+    color: #F2F2F2;
+}
 /* Cadre de toutes les images et descriptions */
 
 .photog
@@ -493,4 +496,82 @@ h4 + p
     text-decoration: none;
 }
 /* Fin de la mise en forme de la partie hébergement droite*/
+
+
+/* Mise en forme de la partie activités*/
+.activmars
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    
+}   
+
+h5
+{
+    font-size: 1em;
+    font-weight: bold;
+    margin: 20px;
+    
+}
+.activmars a:hover
+{
+    text-decoration: none;
+    color: #0065FC ;
+}
+.activmars a
+{
+    text-decoration: none;
+    color: black ;
+}
+
+.gmactivite
+{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+    width: auto;
+     
+}
+
+.gmactivite img
+{
+    border: 2px solid none;
+    border-radius: 30px 30px 0 0;
+    height: 400px;
+    width: 300px;
+}
+
+.ptactivite
+{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+    width: auto;
+    margin-bottom: 30px;
+    
+     
+}
+
+.ptactivite img
+{
+    border: 2px solid none;
+    border-radius: 30px 30px 0 0;
+    height: 180px;
+    width: 300px;
+    
+}
+
+.deuxphotos
+{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+
+
 
