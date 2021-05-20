@@ -3,7 +3,7 @@
 body
 {
    font-family: 'Raleway', sans-serif;
-   margin: 70px 70px 0 70px;
+   margin: 0px 50px 0 50px;
   
 }
 
@@ -145,13 +145,13 @@ nav ul a:hover
     font-size: 1em;
     font-weight: 700;
     text-align: center;
-}
+    }
 
 #submit:hover
 {
     color: #0065FC;
     background-color: #DEEBFF;
-}
+    }
 
 
 /* Mise de la partie filtres*/
@@ -324,7 +324,7 @@ button a:hover
 }
 .far
 {
-    color: #F2F2F2;
+    color: rgb(206, 206, 206);
 }
 /* Cadre de toutes les images et descriptions */
 
@@ -421,6 +421,8 @@ h4 + p
 
 .photod
 {
+    display: flex;
+    flex-direction: column;
     margin: 20px 0 0 40px;
     width: auto;
     
@@ -499,6 +501,7 @@ h4 + p
 
 
 /* Mise en forme de la partie activités*/
+
 .activmars
 {
     display: flex;
@@ -532,6 +535,8 @@ h5
     border: 2px solid #F2F2F2;
     border-radius: 30px;
     width: auto;
+    height: 520px;
+    margin-right: 50px;
      
 }
 
@@ -539,7 +544,7 @@ h5
 {
     border: 2px solid none;
     border-radius: 30px 30px 0 0;
-    height: 400px;
+    height: 450px;
     width: 300px;
 }
 
@@ -569,9 +574,64 @@ h5
     display: flex;
     flex-direction: column;
     
+    
 
 }
 
 
+/* Mise en forme du pied de page*/
 
+footer
+{
+    display: flex;
+    background-color: #F2F2F2;
+    margin-bottom: 30px;
+    
+}
+
+footer h6
+{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+footer ul
+{
+    padding-left: 0px;
+}
+
+footer li
+{
+    list-style: none;
+    font-size: 0.8em;
+}
+
+
+footer a:hover
+{
+    color: #0065FC ;
+    text-decoration: none;
+}
+
+footer a
+{
+    color: black ;
+    text-decoration: none;
+}
+
+#propos
+{
+    width: 35%;
+    margin-left: 50px;
+}
+
+#noshbt
+{
+    width: 30%;
+}
+
+#assist
+{
+    width: 35%;
+}
 

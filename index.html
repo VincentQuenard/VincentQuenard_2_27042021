@@ -50,8 +50,10 @@
             <div id="search">
                 <i class="fas fa-map-marker-alt"></i>
                 <p>
-                    <input id="ville" type="search" name="Ville" value="Marseille, France">
-                    <input id="submit" type="submit" value="Rechercher" />
+                    <input id="ville" type="search" placeholder="Marseille, France">
+                    <button id="submit">
+                        <a href="#">Rechercher</a>
+                    </button>
                 </p>
             </div>
 
@@ -61,22 +63,22 @@
                 <h2>Filtres</h2>
                 <button>
                     <i class="fas fa-money-bill-wave"></i>
-                    <a class="lien" href="#"><p>Economique</p></a>
+                    <a class="lien" href="#">Economique</a>
                 </button>
 
                 <button>
                     <i class="fas fa-child"></i>
-                    <a class="lien" href="#"><p>Familial</p></a>
+                    <a class="lien" href="#">Familial</a>
                 </button>
 
                 <button class="bouton">
                     <i class="fas fa-heart"></i>
-                    <a class="lien" href="#"><p>Romantique</p></a>
+                    <a class="lien" href="#">Romantique</a>
                 </button>
 
                 <button>
                     <i class="fas fa-dog"></i>
-                    <a class="lien" href="#"><p>Animaux autorisés</p></a>
+                    <a class="lien" href="#">Animaux autorisés</a>
                 </button>
             </div>
 
@@ -323,13 +325,42 @@
         </section>
     </main>
     <!-- Fin du contenu principal-->
-</body>
+
 
 <!-- Mise en place du pied de page-->
-<footer>
+    <footer>
 
-    
-</footer>
-<!-- Fin du pied de page -->
+        <div id="propos">
+            <h6>A propos</h6>
+            <a href="#">
+                <ul>
+                    <li>Fonctionnement du site</li>
+                    <li>Conditions générales de vente</li>
+                    <li>Données et confidentialité</li>
+                </ul>
+            </a>
+        </div>
 
+        <div id="noshbt">
+            <h6>Nos Hébergements</h6>
+            <a href="#">
+                    <ul>
+                        <li>Charte qualité</li>
+                        <li>Soumettre votre hôtel</li>
+                    </ul>
+                </a>
+        </div>
+
+        <div id="assist">
+            <h6>Assistance</h6>
+            <a href="#">
+                    <ul>
+                        <li>Centre d'aide</li>
+                        <li>Nous contacter</li>
+                    </ul>
+                </a>
+        </div>
+    </footer>
+    <!-- Fin du pied de page -->
+</body>    
 </html>
