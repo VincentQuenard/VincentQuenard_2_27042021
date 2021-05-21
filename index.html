@@ -16,7 +16,7 @@
 
 <body>
     <!--Mise en place de l'entête -->
-    <header>
+    <header class="entete">
         <!-- intégration du logo du site -->
         <div id="logo">
             <img src="./images/Reservia@3x.png" alt="logo_réservia">
@@ -25,12 +25,12 @@
 
         <!-- Mise en place du menu de navigation avec ancres-->
         <nav>
-            <ul>
+            <ul id="navigation">
                 <li><a href="#Hébergements">Hébergements</a></li>
                 <li><a href="#Activités">Activités</a></li>
                 
             </ul>
-                <p><a href="#S'inscrire">S'inscrire</a></p>
+                <a id="inscription" href="#S'inscrire">S'inscrire</a>
         </nav>
         <!-- Fin du menu de navigation -->
     </header>
@@ -38,23 +38,32 @@
 
     <!-- Mise ne place du contenu principal -->
     <main>
-        <section>
+        <section class="Rechercher">
 
     <!-- Mise ne place du titre et de la partie recherche -->
 
-            <div id="ajust">
-                <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-            </div>
+            <div>
+                <div id="ajust">
+                    <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
+                </div>
 
-            <div id="search">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>
-                    <input id="ville" type="search" placeholder="Marseille, France">
-                    <button id="submit">
+                <div id="search">
+
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+
+                    <div id="ville">
+                        <input  type="search" placeholder="Marseille, France">
+                    </div>
+
+                    <div id="submit">
+                        
                         <a href="#">Rechercher</a>
-                    </button>
-                </p>
+                        
+                    </div>
+                </div>
             </div>
 
     <!-- Mise ne place de la partie filtres -->
@@ -62,23 +71,31 @@
             <div class="filtres">
                 <h2>Filtres</h2>
                 <button>
-                    <i class="fas fa-money-bill-wave"></i>
-                    <a class="lien" href="#">Economique</a>
+                    <span class="icones">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </span>
+                    Economique
                 </button>
 
                 <button>
-                    <i class="fas fa-child"></i>
-                    <a class="lien" href="#">Familial</a>
-                </button>
-
-                <button class="bouton">
-                    <i class="fas fa-heart"></i>
-                    <a class="lien" href="#">Romantique</a>
+                    <span class="icones">
+                        <i class="fas fa-child"></i>
+                    </span>
+                    Familial
                 </button>
 
                 <button>
-                    <i class="fas fa-dog"></i>
-                    <a class="lien" href="#">Animaux autorisés</a>
+                    <span class="icones">
+                        <i class="fas fa-heart"></i>
+                    </span>
+                    Romantique
+                </button>
+
+                <button>
+                    <span class="icones">
+                        <i class="fas fa-dog"></i>
+                    </span>
+                    Animaux autorisés
                 </button>
             </div>
 

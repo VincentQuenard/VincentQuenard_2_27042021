@@ -3,7 +3,7 @@
 body
 {
    font-family: 'Raleway', sans-serif;
-   margin: 0px 50px 0 50px;
+   margin: 30px 30px 0 30px;
   
 }
 
@@ -23,8 +23,7 @@ header
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-    margin-bottom: 30px;
-    }
+}
 
 /* redimensionnement du logo et marges */
 
@@ -49,13 +48,14 @@ nav{
     font-size: 1em;
 }
 
-nav a
+nav ul li a
 {
     text-decoration: none;
     color: black;
 }
 
-nav ul{
+#navigation
+{
     display: flex;
     list-style-type: none;
     margin-right: 30px;
@@ -66,20 +66,22 @@ nav li{
     margin-left: 30px;
 }
 
-nav p a
+nav a
 {
+    text-decoration: none;
     color: #0065FC;
+    padding-top: 15px;
 }
 
 /* Effet de survol sur lien de navigation */
 
-nav p a:hover
+nav a:hover
 {
     color: black;
     border-top: 3px solid #0065FC;
 }
 
-nav ul a:hover
+#navigation a:hover
 {
     color:#0065FC;
     border-top: 3px solid #0065FC;
@@ -87,6 +89,10 @@ nav ul a:hover
 
 
 /* Contenu principal */
+.rechercher {
+    padding-top: 20px;
+    
+}
 
 /* Ajustement taille titre et paragraphe avant recherche*/
 
@@ -94,7 +100,9 @@ nav ul a:hover
 {
     font-size: 0.8em;
     margin-left: 20px;
+    padding-bottom: 20px;
 }
+
 
 
 /* Mise en place de la recherche*/
@@ -102,63 +110,77 @@ nav ul a:hover
 
 #search
 {
-    display: inline-flex;
-    height: 50px;
+    display: flex;
     margin-left: 20px;
+    padding-left: 10px;
 }
 
 .fa-map-marker-alt
 { 
-    font-size: 1em;
-    margin-top: 15px;
-    padding: 16.5px 10px 35px 10px;
+    border: #f2f2f2 solid 2px;
+    border-radius: 13px 0px 0px 13px;
+    font-size: 17px;
     background-color: #f2f2f2;
-    border: 1px solid #f2f2f2;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    text-align: center;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
     align-items: center;
     
 }
 
 #ville
 {
-    width: 234px;
-    height: 51px;
+    height: 50px;
+    width: 210px;
+    border: #f2f2f2 solid 2px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: black;
+}
+
+#ville input
+{
+    text-decoration: none;
     border: none;
-    border-top: 1px solid #f2f2f2;
-    border-bottom: 1px solid #f2f2f2;
-    text-align: center;
+    height: 50px;
     font-size: 1em;
-    font-weight: 700;
+    font-weight: bold;
+    color: black;
+    width: 100%;
+    padding-left: 20px ;
 }
 
 #submit
 {
+    display: flex;
     width: 130px;
-    height: 51px;
+    height: 53px;
     border: none;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: #0065fc;
     color: white;
     font-size: 1em;
-    font-weight: 700;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     }
 
-#submit:hover
+#submit a
 {
-    color: #0065FC;
-    background-color: #DEEBFF;
-    }
-
+    text-decoration: none;
+    background-color: #0065fc;
+    color: white;
+}
 
 /* Mise de la partie filtres*/
 
 .filtres
 {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 40px;
     font-weight: bold;
     font-size: 1em;
@@ -188,12 +210,13 @@ nav ul a:hover
     border-radius: 50px;
     background: none;
     padding: 0 20px 0 0;
-    margin-right: 150px;
+    margin-right: 25px;
+    cursor: pointer;
 }
 
 /* Mise en forme des incones des filtres*/
 
-.fa-money-bill-wave
+.icones
 {
     display: flex;
     width: 50px;
@@ -206,54 +229,8 @@ nav ul a:hover
     margin-right: 15px;
 }
 
-.fa-child
-{
-    display: flex;
-    width: 50px;
-    height: 50px;
-    background-color: #DEEBFF;
-    color: #0065FC;
-    border-radius: 50px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-right: 15px;
-}
-
-.fa-heart
-{
-    display: flex;
-    width: 50px;
-    height: 50px;
-    background-color: #DEEBFF;
-    color: #0065FC;
-    border-radius: 50px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-right: 15px;
-}
-
-.fa-dog
-{
-    display: flex;
-    width: 50px;
-    height: 50px;
-    background-color: #DEEBFF;
-    color: #0065FC;
-    border-radius: 50px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-right: 15px;
-}
 
 /* Effet de survol des boutons filtres*/
-button a
-{
-    color: black;
-    background-color: white;
-}
 
 button:hover
 {
@@ -261,11 +238,6 @@ button:hover
     background-color: #DEEBFF;
 }
 
-button a:hover
-{
-    color: #0065FC;
-    background-color: #DEEBFF;
-}
 /* Mise en forme de la ligne information*/
 #info
 {
