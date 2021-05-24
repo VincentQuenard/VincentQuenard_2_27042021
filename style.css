@@ -3,19 +3,39 @@
 body
 {
    font-family: 'Raleway', sans-serif;
-   margin: 30px 30px 0 30px;
+   color: black;
   
 }
 
-/* Application police maquette pour titres h3 */
+.container
+{
+    max-width: 1400px;
+    margin: auto
+}
+
+/* Application police maquette pour titres */
+
+h2 
+{
+    display: flex;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 50px;
+    align-items: center;
+    
+}
+
+
 h3
 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+
 
 /* Application police maquette */
 header
@@ -25,21 +45,13 @@ header
     margin-top: 10px;
 }
 
-/* redimensionnement du logo et marges */
+/* redimensionnement du logo */
 
 #logo img
 {
     width: auto;
     height: 50px;
-   
-
 }
-#logo
-{ 
-    margin-left: 20px;
-    
-}
-
 /* mise en place menu de navigation*/
 nav{
     display: flex;
@@ -99,7 +111,6 @@ nav a:hover
 #ajust
 {
     font-size: 0.8em;
-    margin-left: 20px;
     padding-bottom: 20px;
 }
 
@@ -111,8 +122,7 @@ nav a:hover
 #search
 {
     display: flex;
-    margin-left: 20px;
-    padding-left: 10px;
+    
 }
 
 .fa-map-marker-alt
@@ -187,15 +197,7 @@ nav a:hover
         
 }
 
-.filtres h2
-{
-    font-size: 1em;
-    font-weight: bold;
-    margin-left: 20px;
-    margin-right: 50px;
-    align-items: center;
-    display: flex;
-}
+
 
 /* Mise en forme commune à tous les filtres*/
 
@@ -243,7 +245,6 @@ button:hover
 {
     display: flex;
     margin-top: 20px;
-    margin-left: 20px;
     font-size: 0.8em;
 }
 
@@ -264,77 +265,72 @@ button:hover
 }
 
 /* Mise en page de la section hébergements*/
-#hbgt
+.hebergement_marseille
 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 30fr 15fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 50px;
+}
+.fa-star
+{
+    font-size: 0.8em;
 }
 
 /* Mise en forme de la partie hébergement gauche*/
 
 /* Mise en place du container gauche */
-#gauche
+.gauche
 {
-    background-color: #F2F2F2;
-    width: 70%;
-    margin: 30px;
+    background-color: #f2f2f2;
     border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 55px 1fr 1fr 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
 }
 
-/* Ajustement des photos*/
+.gauche h3
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
 
-.imag
-{
-    width: 320px;
-    height: 150px;
-    border-radius: 20px 20px 0 0;
 }
-
-/* Fond bleu des étoiles */
-.fa-star
-{
-    color: #0065FC;
-}
-.far
-{
-    color: rgb(206, 206, 206);
-}
-/* Cadre de toutes les images et descriptions */
 
 .photog
 {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px 0 0 40px;
-    
+    width: 250px;
+    height: 110px;
+    border-radius: 20px 20px 0 0;
 }
 
-/* Mise en forme de chaque photo et description*/
 
-.entour
+/* Cadre de toutes les images et descriptions */
+
+.flyergauche
 {
-    border: 2px solid #f2f2f2;
-    border-radius: 30px;
-    padding: 5px 5px 5px 5px;
+    border: white solid 5px;
     background-color: white;
-    margin-right: 30px;
-    margin-bottom: 30px;
-
+    border-radius: 30px;
+    display: grid;
+    grid-template-rows: 2fr;
+    box-shadow: 3px 5px 5px #e2e2e2;
+    
 }
 
 /* Description cliquable et enlèvement du soulignement */
 
-.lien
-{
-    text-decoration: none;
-}
-
-.entour a:hover
+.flyergauche a:hover
 {
     color: #0065FC ;
     text-decoration: none;
 }
 
-.entour a
+.flyergauche a
 {
     color: black ;
     text-decoration: none;
@@ -343,6 +339,7 @@ button:hover
 .descrip
 {
     padding-left: 10px;
+    padding-top: 5px;
    
 }
 /* Ajustement titre des photos*/
@@ -361,15 +358,45 @@ h4 + p
     margin: 5px 0 5px 0;
 }
 
-/* Mise en place du bouton afficher plus*/
+/* Fond bleu des étoiles */
+.blue
+{
+    color: #0065FC;
+}
+
+/* Fond gris des étoiles */
+
+.grey
+{
+    color: #F2F2F2;
+}
+
+/* Ajustement des photos*/
+
+
+/* Mise en place du bouton afficher plus avec effet de survol*/
 
 #affplus
 {
     border: none;
     font-weight: bold;
     font-size: 1em;
-    margin: 0 0 30px 30px;
+    text-decoration: none;
+    padding: 20px 0 0 10px;
 }
+
+#affplus a
+{
+    text-decoration: none;
+    color: black ; 
+}
+
+#affplus :hover
+{
+    text-decoration: none;
+    color: #0065FC; 
+}
+
 
 /* Fin de la mise en forme de la partie hébergement gauche*/
 
@@ -380,95 +407,96 @@ h4 + p
 
 /* Mise en place du container droit */
 
-#droite
+.droite
 {
-    background-color: #F2F2F2;
-    width: 25%;
-    margin: 30px;
+    background-color: #f2f2f2;
     border-radius: 30px;
+    display: grid;
+    grid-template-rows: 55px 2fr 2fr 2fr;
+    grid-row-gap: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
 }
+/* Description cliquable et enlèvement du soulignement */
 
-
-/* Cadre de toutes les images et descriptions */
-
-.photod
-{
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0 0 40px;
-    width: auto;
-    
-}
-
-/* Ajustement des photos*/
-
-.imad
-{
-    width: 150px;
-    height: 160px;
-    border-radius: 20px  0 0 20px;
-}
-
-/* Mise en forme de chaque photo et description*/
-
-.entourd
-{
-    display: flex;  
-    border: 2px solid #f2f2f2;
-    border-radius: 30px;
-    padding: 5px 5px 5px 5px;
-    background-color: white;
-    margin-right: 30px;
-    margin-bottom: 30px;
-      
-}
-
-/* Ajustement description sous photo */
-.descripd
-{
-   padding-left: 10px;
-   padding-right: 50px;
-} 
-
-.descripd h4
-{
-   padding-top: 15px;
-   
-} 
-
-.descripd h4 + p
-{
-
-    font-size: 0.8em;
-    margin: 10px 0 50px 0;
-}
-
-/* Placement descriptions à coté photo */
-.horiz
-{
-    display: flex;
-    width: auto;
-    height: 160px;
-}
-
-/* Espacement logo du titre */
-.fa-chart-line
-{
-    margin-left: 110px;
-}
-
-/* Description cliquable */
-.entourd a:hover
+.droite a:hover
 {
     color: #0065FC ;
     text-decoration: none;
 }
 
-.entourd a
+.droite a
 {
     color: black ;
     text-decoration: none;
 }
+
+/* Mise en place du titre et de l'icone*/
+.titred
+{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+.titred div
+{
+    font-size: 20px;
+    padding-top: 38px
+}
+.prixnuit p
+{
+    font-size: 0.8em;
+}
+
+/* Ajustement des photos*/
+
+.photoetdescription
+{
+    display: grid;
+    grid-template-columns: 135px 1fr;
+    grid-column-gap: 10px;
+    border-radius: 20px;
+}
+
+.photod img
+{
+
+    border-radius: 20px 0px 0px 20px;
+    height: 135px;
+    width: 135px;
+}
+
+
+/* Mise en forme de chaque photo et description*/
+
+.flyerdroit
+{
+    background-color: #fff;
+    border-radius: 30px;
+    border: 5px solid white;
+    box-shadow: 3px 5px 5px #e2e2e2;
+      
+}
+
+/* Ajustement description*/
+.descripd
+{
+   display: flex;
+   flex-direction: column;
+   width: 156px
+} 
+}
+.prixnuit p
+{
+    font-size: 0.8em;
+}
+
+.evaluation
+{
+    padding-top: 35px;
+}
+
 /* Fin de la mise en forme de la partie hébergement droite*/
 
 
