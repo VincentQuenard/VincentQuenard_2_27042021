@@ -190,6 +190,13 @@ header
     color: white;
 }
 
+
+/* bouton rechercher pour iphone caché*/
+#search_iphone
+{
+    display: none;
+}
+
 /* Mise de la partie filtres*/
 
 .filtres
@@ -793,6 +800,51 @@ footer a
 
 /* Mise en forme des filtres*/
 
+/* rechercher desktop caché et remplacé par version iphone */
+#search
+{
+    display: none;
+}
+
+#search_iphone
+{
+    display: flex;
+}
+
+.fa-map-marker-alt
+{ 
+    padding: 6px;
+    height: 38px;
+    width: 40px;
+    
+}
+
+#ville
+{
+
+}
+
+#ville input
+{
+    
+}
+
+#submit
+{
+    padding: 6px;
+    border-radius: 15px;
+    height: 40px;
+    width: 40px;
+    margin-left: -10px;
+    }
+
+#submit a
+{
+    text-decoration: none;
+    background-color: #0065fc;
+    color: white;
+}
+
 /* Mise en forme du titre*/
 #ajust
 {
@@ -828,7 +880,7 @@ footer a
     margin-right: 5px;
 }
 
-/* Ajustement d'information avec texte*/
+/* Ajustement partie information avec texte*/
 
 #info
 {
