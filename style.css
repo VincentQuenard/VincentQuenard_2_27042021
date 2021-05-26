@@ -10,7 +10,7 @@ body
 .container
 {
     max-width: 1400px;
-    margin: auto
+    margin: auto;
 }
 
 /* Application police maquette pour titres */
@@ -37,12 +37,16 @@ h3
 
 
 
-/* Application police maquette */
+/* mise en place des élements du header */
 header
 {
     display: flex;
-    justify-content: space-between;
     margin-top: 10px;
+}
+
+#logo
+{
+    margin-right: auto;
 }
 
 /* redimensionnement du logo */
@@ -53,51 +57,53 @@ header
     height: 50px;
 }
 /* mise en place menu de navigation*/
-nav{
+
+#navigation
+{
     display: flex;
+    padding-top: 15px;
     margin-right: 50px;
     font-weight: bold;
     font-size: 1em;
 }
 
-nav ul li a
+#navigation a
 {
     text-decoration: none;
     color: black;
 }
 
-#navigation
+#hbgt
 {
-    display: flex;
-    list-style-type: none;
-    margin-right: 30px;
-    
+    margin-right: 50px;
 }
 
-nav li{
-    margin-left: 30px;
+#inscription
+{
+    padding: 15px 20px 0 0
 }
 
-nav a
+
+#inscription a
 {
     text-decoration: none;
     color: #0065FC;
     padding-top: 15px;
+     font-weight: bold;
 }
 
-/* Effet de survol sur lien de navigation */
 
-nav a:hover
-{
-    color: black;
-    border-top: 3px solid #0065FC;
-}
+/* Effet de survol sur liens de navigation */
 
 #navigation a:hover
 {
     color:#0065FC;
+    padding-top: 10px;
     border-top: 3px solid #0065FC;
 }
+
+
+
 
 
 /* Contenu principal */
@@ -192,9 +198,19 @@ nav a:hover
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 40px;
+    margin-right: 50px;
     font-weight: bold;
     font-size: 1em;
+    align-items: center;
         
+}
+
+.filtres_boutons
+{
+    font-size: 1.1em;
+    margin-right: 20px;
+    
+
 }
 
 
@@ -502,12 +518,13 @@ h4 + p
 
 /* Mise en forme de la partie activités*/
 
-.activmars
+.activite_marseille
 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; 
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
 }   
 
 h5
@@ -515,68 +532,128 @@ h5
     font-size: 1em;
     font-weight: bold;
     margin: 20px;
-    
 }
-.activmars a:hover
+
+.activite_marseille h3
+{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.activite_marseille a:hover
 {
     text-decoration: none;
     color: #0065FC ;
 }
-.activmars a
+.activite_marseille a
 {
     text-decoration: none;
     color: black ;
 }
 
-.gmactivite
+.port
 {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #F2F2F2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
     border-radius: 30px;
-    width: auto;
-    height: 520px;
-    margin-right: 50px;
-     
+    width: 320px;
+    height: 200px;
 }
 
-.gmactivite img
-{
-    border: 2px solid none;
-    border-radius: 30px 30px 0 0;
-    height: 450px;
-    width: 300px;
-}
-
-.ptactivite
-{
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #F2F2F2;
+ .photo_titre
+{  display: grid;
+    grid-template-rows: 2fr;
     border-radius: 30px;
-    width: auto;
-    margin-bottom: 30px;
-    
-     
+    box-shadow: 3px 5px 5px #e2e2e2;
 }
 
-.ptactivite img
+.photo_port
 {
-    border: 2px solid none;
     border-radius: 30px 30px 0 0;
-    height: 180px;
-    width: 300px;
-    
+    width: auto;
 }
 
-.deuxphotos
+
+.pomegues
 {
-    display: flex;
-    flex-direction: column;
-    
-    
-
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 30px;
 }
+
+.photo_pomegues
+{
+    border-radius: 30px 30px 0 0;
+    width: 320px;
+}
+
+
+.frioul
+{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-radius: 30px;
+    height: 160px;
+}
+
+.photo_frioul
+{
+    border-radius: 30px 30px 0 0;
+    width: 320px;
+}
+
+.calanques
+{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    border-radius: 30px;
+}
+
+.photo_calanques
+{
+    border-radius: 30px 30px 0 0;
+    width: 320px;
+}
+
+
+.ndgarde
+{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 30px;
+}
+
+.photo_ndgarde
+{
+    border-radius: 30px 30px 0 0;
+    width: 320px;
+}
+
+.longchamp
+{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-radius: 30px;
+}
+
+.photo_longchamp
+{
+    border-radius: 30px 30px 0 0;
+    width: 320px;
+}
+
 
 
 /* Mise en forme du pied de page*/
@@ -633,5 +710,190 @@ footer a
 #assist
 {
     width: 35%;
+}
+
+
+/* Média queries affichage téléphone*/
+
+@media (max-width: 660px)
+
+{
+/* Adaptation de la page à la résolution*/
+.container
+{
+    max-width: 660px;
+    width: auto;
+    margin: 0 10px 0 10px;
+}
+
+
+/* Mise en forme du header*/
+.entete
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr
+}
+
+#logo
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2
+}
+
+#navigation
+{
+    grid-column-gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 / span2;
+    border-bottom: #deebff solid 2px;
+    margin-right: -10px;
+    margin-left: -20px;
+    font-weight: normal;
+    font-size: 0.9em;
+}
+#hbgt
+{
+    margin: 0;
+}
+
+#navigation div 
+{
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navigation div a:hover
+{
+    border-style : none;
+}
+
+#navigation div:hover
+{
+    color:#0065FC;
+    border-bottom: 3px solid #0065FC;
+}
+
+#inscription
+{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-left: 100px;
+}
+
+
+
+/* Mise en forme des filtres*/
+
+/* Mise en forme du titre*/
+#ajust
+{
+    padding-right: 48px;
+    padding-top: 5px;
+}
+
+
+/* Ajustement des filtres*/
+
+
+.filtres
+
+{
+    margin-right: 10px;
+}
+.filtres_boutons
+{
+    margin-right: 200px;
+    margin-bottom: 20px;
+}
+
+
+.filtres button
+{
+    padding-right: 5px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+.icones
+{
+    margin-right: 5px;
+}
+
+/* Ajustement d'information avec texte*/
+
+#info
+{
+    margin-top: 0px;
+}
+#info p
+{
+    padding-right: 40px;
+}
+
+
+
+/* Mise en forme de la partie hébergement*/
+
+.hebergement_marseille
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.droite
+
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.gauche
+{
+    display: flex;
+    flex-direction: column;
+    order: 2;
+}
+.photoetdescription
+{
+    display: flex;
+}
+
+
+
+
+/* Mise en forme de la partie activité*/
+.activite_marseille
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.port
+{
+ width: auto;
+ height: auto;
+
+}
+
+
+
+
+footer
+{
+
+    display: flex;
+    flex-direction: column;
+}
+
 }
 
