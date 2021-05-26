@@ -758,8 +758,7 @@ footer a
     border-bottom: #deebff solid 2px;
     margin-right: -10px;
     margin-left: -20px;
-    font-weight: normal;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 #hbgt
 {
@@ -816,17 +815,6 @@ footer a
     padding: 6px;
     height: 38px;
     width: 40px;
-    
-}
-
-#ville
-{
-
-}
-
-#ville input
-{
-    
 }
 
 #submit
@@ -838,12 +826,6 @@ footer a
     margin-left: -10px;
     }
 
-#submit a
-{
-    text-decoration: none;
-    background-color: #0065fc;
-    color: white;
-}
 
 /* Mise en forme du titre*/
 #ajust
@@ -905,8 +887,10 @@ footer a
 .droite
 
 {
-    display: flex;
-    flex-direction: column;
+   flex-direction: column;
+   border-radius: 0;
+   padding-left: 20px;
+   padding-right: 20px;
 }
 
 .gauche
@@ -914,10 +898,27 @@ footer a
     display: flex;
     flex-direction: column;
     order: 2;
+    background-color: white;
+    padding: 0px;
+    padding-right: 20px;
+    grid-row-gap: 20px;
+}
+
+.gauche h3
+
+{
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding: 0px;
 }
 .photoetdescription
 {
     display: flex;
+}
+
+.photog
+{
+    width: 335px;
 }
 
 
@@ -926,7 +927,7 @@ footer a
 /* Mise en forme de la partie activité*/
 .activite_marseille
 {
-    display: flex;
+     flex;display:
     flex-direction: column;
 }
 
@@ -939,12 +940,37 @@ footer a
 
 
 
-
+/* Mise en forme de la partie activité*/
 footer
 {
-
     display: flex;
     flex-direction: column;
+    
+}
+
+#propos {
+    width: auto;
+    margin-left: 20px;
+}
+
+#noshbt {
+    width: auto;
+    margin-left: 20px;
+}
+
+#assist {
+    width: auto;
+    margin-left: 20px;
+}
+footer ul li
+{
+    margin-bottom: 10px;
+}
+
+footer h6
+
+{
+    margin-bottom: 10px;
 }
 
 }
