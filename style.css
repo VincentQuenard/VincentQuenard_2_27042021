@@ -268,6 +268,7 @@ button:hover
 {
     display: flex;
     margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 0.8em;
 }
 
@@ -483,13 +484,10 @@ h4 + p
 }
 
 .photod img
-{
-
-    border-radius: 20px 0px 0px 20px;
+{    border-radius: 20px 0px 0px 20px;
     height: 135px;
     width: 135px;
 }
-
 
 /* Mise en forme de chaque photo et description*/
 
@@ -528,24 +526,26 @@ h4 + p
 .activite_marseille
 {
     display: grid;
+    border-radius: 30px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px 1fr 1fr;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-}   
+    grid-template-rows: 70px 1fr 1fr;
+    grid-column-gap: 45px;
+    padding-top: 40px;
+}
+
+.activite_marseille h3
+
+{
+    padding: 0;
+}
 
 h5
 {
     font-size: 1em;
     font-weight: bold;
-    margin: 20px;
+    margin: 11px 0px 11px 20px;
 }
 
-.activite_marseille h3
-{
-    grid-column-start: 1;
-    grid-column-end: 5;
-}
 
 .activite_marseille a:hover
 {
@@ -561,64 +561,66 @@ h5
 .port
 {
     grid-column-start: 1;
-    grid-column-end: 1;
     grid-row-start: 2;
     grid-row-end: 4;
     border-radius: 30px;
-    width: 320px;
-    height: 200px;
+}
+
+.photo_port
+
+{
+    background-image: url(./images/vieux_port.jpg);
+    background-size: cover;
+    border-radius: 30px 30px 0px 0px;
+    background-position: center;
+    height: 390px;
 }
 
  .photo_titre
-{  display: grid;
-    grid-template-rows: 2fr;
+{
+    display: grid;
     border-radius: 30px;
     box-shadow: 3px 5px 5px #e2e2e2;
 }
 
-.photo_port
-{
-    border-radius: 30px 30px 0 0;
-    width: auto;
-}
-
-
 .pomegues
 {
     grid-column-start: 2;
-    grid-column-end: 2;
     grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-end: ;
     border-radius: 30px;
 }
 
 .photo_pomegues
 {
-    border-radius: 30px 30px 0 0;
-    width: 320px;
+    background-image: url(./images/fort_pomegues.jpg);
+    background-size: cover;
+    border-radius: 30px 30px 0px 0px;
+    background-position: center;
+    height: 190px;
 }
-
 
 .frioul
 {
     grid-column-start: 2;
-    grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
     border-radius: 30px;
-    height: 160px;
+    padding-top: 45px;
 }
 
 .photo_frioul
 {
-    border-radius: 30px 30px 0 0;
-    width: 320px;
+    background-image: url(./images/iles_frioul.jpg);
+    background-size: cover;
+    border-radius: 30px 30px 0px 0px;
+    background-position: center;
+    height: 110px;
 }
 
 .calanques
 {
     grid-column-start: 3;
-    grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 4;
     border-radius: 30px;
@@ -626,30 +628,34 @@ h5
 
 .photo_calanques
 {
-    border-radius: 30px 30px 0 0;
-    width: 320px;
+    background-image: url(./images/parc_calanques.jpg);
+    background-size: cover;
+    border-radius: 30px 30px 0px 0px;
+    background-position: center;
+    height: 390px;
 }
-
 
 .ndgarde
 {
-    grid-column-start: 4;
-    grid-column-end: 5;
+   grid-column-start: 4;
     grid-row-start: 2;
     grid-row-end: 3;
-    border-radius: 30px;
+    border-radius: 30px; 
 }
 
 .photo_ndgarde
 {
-    border-radius: 30px 30px 0 0;
-    width: 320px;
+    background-image: url(./images/nd_garde.jpg);
+    background-size: cover;
+    border-radius: 30px 30px 0px 0px;
+    background-position: center;
+    height: 150px;
 }
+
 
 .longchamp
 {
-    grid-column-start: 4;
-    grid-column-end: 5;
+   grid-column-start: 4;
     grid-row-start: 3;
     grid-row-end: 4;
     border-radius: 30px;
@@ -657,11 +663,17 @@ h5
 
 .photo_longchamp
 {
-    border-radius: 30px 30px 0 0;
-    width: 320px;
+    background-image: url(./images/parc_longchamp.jpg);
+    background-size: cover;
+    border-radius: 30px 30px 0px 0px;
+    background-position: center;
+    height: 155px;
 }
 
 
+
+
+/* Fin de la mise en forme de la partie activités*/
 
 /* Mise en forme du pied de page*/
 
@@ -670,6 +682,7 @@ footer
     display: flex;
     background-color: #F2F2F2;
     margin-bottom: 30px;
+    margin-top: 50px;
     
 }
 
@@ -725,6 +738,8 @@ footer a
 @media (max-width: 660px)
 
 {
+
+
 /* Adaptation de la page à la résolution*/
 .container
 {
@@ -756,7 +771,7 @@ footer a
     grid-template-columns: 1fr 1fr;
     grid-column: 1 / span2;
     border-bottom: #deebff solid 2px;
-    margin-right: -10px;
+    margin-right: -20px;
     margin-left: -20px;
     font-size: 1em;
 }
@@ -918,29 +933,43 @@ footer a
 
 .photog
 {
-    width: 315px;
+    width: 350px;
 }
 
 
 
 
 /* Mise en forme de la partie activité*/
+
 .activite_marseille
 {
     display: flex ;  
     flex-direction: column;
 }
 
-.port
+.photo_port,
+.photo_pomegues,
+.photo_frioul,
+.photo_calanques,
+.photo_ndgarde,
+.photo_longchamp
 {
- width: auto;
- height: auto;
+    height: 150px;
+}
 
+.port,
+.pomegues,
+.frioul,
+.calanques,
+.ndgarde,
+.longchamp
+{
+    padding: 0 15px 20px 0;
 }
 
 
 
-/* Mise en forme de la partie activité*/
+/* Fin de mise en forme de la partie activité*/
 footer
 {
     display: flex;
