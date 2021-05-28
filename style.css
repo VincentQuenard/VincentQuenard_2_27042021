@@ -91,9 +91,6 @@ header
 }
 
 
-
-
-
 /* Contenu principal */
 .rechercher {
     padding-top: 20px;
@@ -109,9 +106,7 @@ header
 }
 
 
-
 /* Mise en place de la recherche*/
-
 
 #search
 {
@@ -204,8 +199,6 @@ header
 {
     font-size: 1.1em;
     margin-right: 20px;
-    
-
 }
 
 
@@ -295,7 +288,7 @@ button:hover
 .gauche
 {
     background-color: #f2f2f2;
-    border-radius: 30px;
+    border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 55px 1fr 1fr 50px;
@@ -313,11 +306,70 @@ button:hover
 
 }
 
-.photog
+/* Insertion des images et mise en forme*/
+
+.photo_aub_cannebiere
 {
-    width: 250px;
+    background-image: url(./images/aub_cannebiere_sm.jpg);
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position: center;
     height: 110px;
-    border-radius: 20px 20px 0 0;
+}
+
+
+.photo_hotel_port
+{
+    background-image: url(./images/hotel_port.jpg);
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position: center;
+    height: 110px;
+}
+
+
+
+.photo_hotel_mouettes
+{
+    background-image: url(./images/hot_mouettes_sm.jpg);
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position: center;
+    height: 110px;
+}
+
+
+
+.photo_hotel_mer
+{
+    background-image: url(./images/hot_mer_sm.jpg);
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position: center;
+    height: 110px;
+}
+
+
+
+
+.photo_aub_panier
+{
+    background-image: url(./images/aub_panier_sm.jpg);
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position: center;
+    height: 110px;
+}
+
+
+
+.photo_hotel_amina
+{
+    background-image: url(./images/hot_amina_sm.jpg);
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position: center;
+    height: 110px;
 }
 
 
@@ -327,7 +379,7 @@ button:hover
 {
     border: white solid 5px;
     background-color: white;
-    border-radius: 30px;
+    border-radius: 20px;
     display: grid;
     grid-template-rows: 2fr;
     box-shadow: 3px 5px 5px #e2e2e2;
@@ -348,12 +400,14 @@ button:hover
     text-decoration: none;
 }
 /* Ajustement description sous photo */
+
 .descrip
 {
-    padding-left: 10px;
-    padding-top: 5px;
+    
+    padding: 5px 0 5px 15px;
    
 }
+
 /* Ajustement titre des photos*/
 h3
 {
@@ -422,7 +476,7 @@ h3 + p
 .droite
 {
     background-color: #f2f2f2;
-    border-radius: 30px;
+    border-radius: 20px;
     display: grid;
     grid-template-rows: 55px 2fr 2fr 2fr;
     grid-row-gap: 30px;
@@ -449,8 +503,8 @@ h3 + p
 {
     display: flex;
     justify-content: space-between;
-    padding-right: 15px;
 }
+
 .titred div
 {
     font-size: 20px;
@@ -468,11 +522,36 @@ h3 + p
     display: grid;
     grid-template-columns: 135px 1fr;
     grid-column-gap: 10px;
-    border-radius: 20px;
 }
 
-.photod img
-{    border-radius: 20px 0px 0px 20px;
+/* Insertion des images et mise en forme*/
+
+.photo_hotel_soleil
+{
+    background-image: url(./images/hot_soleil.jpg);
+    background-size: cover;
+    border-radius: 20px 0px 0px 20px;
+    background-position: center;
+    height: 135px;
+    width: 135px;
+}
+
+.photo_chambres_hotes
+{
+    background-image: url(./images/chambres_hotes.jpg);
+    background-size: cover;
+    border-radius: 20px 0px 0px 20px;
+    background-position: center;
+    height: 135px;
+    width: 135px;
+}
+
+.photo_hot_bleu_blanc
+{
+    background-image: url(./images/hot_bleu_blanc.jpg);
+    background-size: cover;
+    border-radius: 20px 0px 0px 20px;
+    background-position: center;
     height: 135px;
     width: 135px;
 }
@@ -482,7 +561,7 @@ h3 + p
 .flyerdroit
 {
     background-color: #fff;
-    border-radius: 30px;
+    border-radius: 20px;
     border: 5px solid white;
     box-shadow: 3px 5px 5px #e2e2e2;
       
@@ -516,7 +595,7 @@ h3 + p
 .activite_marseille
 {
     display: grid;
-    border-radius: 30px;
+    border-radius: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 70px 1fr 1fr;
     grid-column-gap: 45px;
@@ -558,7 +637,7 @@ h4
     grid-column-start: 1;
     grid-row-start: 2;
     grid-row-end: 4;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .photo_port
@@ -566,7 +645,7 @@ h4
 {
     background-image: url(./images/vieux_port.jpg);
     background-size: cover;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     background-position-x: center;
     background-position-y: center;
     height: 390px;
@@ -584,14 +663,14 @@ h4
     grid-column-start: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .photo_pomegues
 {
     background-image: url(./images/fort_pomegues.jpg);
     background-size: cover;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     background-position-y: 35%;
     height: 190px;
 }
@@ -601,7 +680,7 @@ h4
     grid-column-start: 2;
     grid-row-start: 3;
     grid-row-end: 4;
-    border-radius: 30px;
+    border-radius: 20px;
     padding-top: 45px;
 }
 
@@ -609,7 +688,7 @@ h4
 {
     background-image: url(./images/iles_frioul.jpg);
     background-size: cover;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     background-position-x: center;
     background-position-y: 15%;
     height: 110px;
@@ -620,14 +699,14 @@ h4
     grid-column-start: 3;
     grid-row-start: 2;
     grid-row-end: 4;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .photo_calanques
 {
     background-image: url(./images/parc_calanques.jpg);
     background-size: cover;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     background-position: center;
     height: 390px;
 }
@@ -637,14 +716,14 @@ h4
    grid-column-start: 4;
     grid-row-start: 2;
     grid-row-end: 3;
-    border-radius: 30px; 
+    border-radius: 20px; 
 }
 
 .photo_ndgarde
 {
     background-image: url(./images/nd_garde.jpg);
     background-size: cover;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     height: 150px;
 }
 
@@ -654,14 +733,14 @@ h4
    grid-column-start: 4;
     grid-row-start: 3;
     grid-row-end: 4;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .photo_longchamp
 {
     background-image: url(./images/parc_longchamp.jpg);
     background-size: cover;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     height: 155px;
 }
 
@@ -926,11 +1005,11 @@ footer a
     display: flex;
 }
 
-.photog
+.flyergauche 
 {
-    width: 315px;
+    width: 320px;
+    border: none;
 }
-
 
 
 
@@ -966,14 +1045,14 @@ footer a
 {
     background-image: url(./images/vieux_port.jpg);
     background-size: cover;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     background-position-x: center;
     background-position-y: 0%;
 }
 .photo_frioul {
     background-image: url(./images/iles_frioul.jpg);
     background-size: cover;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     background-position-x: center;
     background-position-y: 0%;
 }
@@ -981,7 +1060,7 @@ footer a
 .photo_calanques {
     background-image: url(./images/parc_calanques.jpg);
     background-size: cover;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     background-position: inherit;
 }
 
