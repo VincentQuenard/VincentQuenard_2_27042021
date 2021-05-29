@@ -201,7 +201,11 @@ header
     margin-right: 20px;
 }
 
-
+.boutons
+{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* Mise en forme commune à tous les filtres*/
 
@@ -572,7 +576,6 @@ h3 + p
 {
    display: flex;
    flex-direction: column;
-   width: 156px
 } 
 
 .prixnuit p
@@ -607,6 +610,7 @@ h3 + p
 .activite_marseille h2
 
 {
+    grid-column: 1 / span 4;
     padding: 0;
 }
 
@@ -654,7 +658,7 @@ h4
  .photo_titre
 {
     display: grid;
-    border-radius: 30px;
+    border-radius: 20px;
     box-shadow: 3px 5px 5px #e2e2e2;
 }
 
@@ -809,7 +813,7 @@ footer a
 
 /* Média queries affichage téléphone*/
 
-@media (max-width: 660px)
+@media screen and (max-width: 767px)
 
 {
 
@@ -817,9 +821,10 @@ footer a
 /* Adaptation de la page à la résolution*/
 .container
 {
-    max-width: 660px;
+    max-width: 767px;
+    margin-left: 20px;
     width: auto;
-    margin: 0 10px 0 10px;
+    
 }
 
 
@@ -979,7 +984,7 @@ footer a
    flex-direction: column;
    border-radius: 0;
    padding-left: 15px;
-   padding-right: 20px;
+   
 }
 
 .gauche
@@ -1007,7 +1012,6 @@ footer a
 
 .flyergauche 
 {
-    width: 320px;
     border: none;
 }
 
@@ -1038,7 +1042,7 @@ footer a
 .ndgarde,
 .longchamp
 {
-    padding: 0 15px 20px 0;
+    padding: 0 30px 20px 0;
 }
 
 .photo_port 
@@ -1102,3 +1106,208 @@ footer h5
 
 }
 
+/* Média queries affichage tablette*/
+
+@media (min-width: 768px) and (max-width: 1024px)
+{
+ /* Adaptation de la page à la résolution*/
+.container
+{
+    max-width: 1024px;
+    width: auto;
+    margin: 0 50px 0 50px;
+}
+
+
+
+/* Mise en forme de la partie recherche et filtres*/
+.filtres_boutons {
+    margin-right: 500px;
+    margin-bottom: 20px;
+}
+
+.filtres button
+{
+    margin-bottom: 15px;
+}
+
+
+
+/* Mise en forme de la partie hébergement*/
+
+.hebergement_marseille
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.droite
+
+{
+   flex-direction: column;
+   border-radius: 20px;
+   padding-left: 15px;
+   
+}
+
+.gauche
+{
+    order: 2;
+    background-color: white;
+    padding: 0px;
+    padding-right: 20px;
+    grid-row-gap: 20px;
+}
+
+.gauche h2
+
+{
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.photoetdescription
+{
+    display: flex;
+}
+
+.flyergauche 
+{
+    border: none;
+}
+
+
+
+/* Mise en forme de la partie activités*/
+
+
+/* Disposition en grille */
+
+.activite_marseille
+{
+    display: grid;
+    border-radius: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 1fr 1fr 1fr;
+    grid-column-gap: 45px;
+    padding-top: 40px;
+}
+
+/* Ajustements des titres*/
+
+.activite_marseille h2
+
+{
+    grid-column: 1 / span 2;
+    padding: 0;
+}
+
+/* Mise en place et en forme des photos sur la grille*/
+.port
+{
+    grid-column: 1;
+    grid-row: 2;
+    border-radius: 20px;
+}
+
+.photo_port
+
+{
+    background-image: url(./images/vieux_port.jpg);
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position-x: center;
+    background-position-y: center;
+    height: 200px;
+}
+
+ .photo_titre
+{
+    display: grid;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px #e2e2e2;
+    margin-bottom: 30px;
+}
+
+.pomegues
+{
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 20px;
+}
+
+.photo_pomegues
+{
+    background-image: url(./images/fort_pomegues.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0px 0px;
+    height: 200px;
+}
+
+.frioul
+{
+    grid-column: 1;
+    grid-row: 3;
+    border-radius: 20px;
+    padding-top: 0px;
+}
+
+.photo_frioul
+{
+    background-image: url(./images/iles_frioul.jpg);
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position: center;
+    height: 200px;
+}
+
+.calanques
+{
+    grid-column: 2;
+    grid-row: 3;
+    border-radius: 20px;
+}
+
+.photo_calanques
+{
+    background-image: url(./images/parc_calanques.jpg);
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position: center;
+    height: 200px;
+}
+
+.ndgarde
+{
+    grid-column: 1;
+    grid-row: 4;
+    border-radius: 20px; 
+}
+
+.photo_ndgarde
+{
+    background-image: url(./images/nd_garde.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0px 0px;
+    height: 200px;
+}
+
+
+.longchamp
+{
+    grid-column: 2;
+    grid-row: 4;
+    border-radius: 20px;
+}
+
+.photo_longchamp
+{
+    background-image: url(./images/parc_longchamp.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0px 0px;
+    height: 200px;
+}
